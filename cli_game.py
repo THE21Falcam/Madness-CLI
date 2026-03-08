@@ -1,7 +1,7 @@
 #TODO: Image to Ascii art convertor Black & White
 #TODO: Create LootTable 
 
-impot sys, subprocess
+import sys, subprocess
 
 Playing = True
 Game_State = 0
@@ -9,7 +9,9 @@ Game_State = 0
 Command_Text = "Command Line Enter Commands"
 
 Text_Display = [
+    
     ["Type 'start' to Start the Game & 'q' to Quit the Game"]
+
 ]
 
 Username = ""
@@ -40,8 +42,10 @@ while(Playing):
     if CommandInput == "h":
 
         Text_Display = [
+            
             ["'q' for Quitting the Game"],
             ["'start' for Starting the Game"]
+        
         ]
     
     elif CommandInput == "start":
