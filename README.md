@@ -1,16 +1,15 @@
 # MadnessCLI
-Offline CLI Version of https://github.com/THE21Falcam/Dungeon-Madness
 
+An offline CLI version of [Dungeon Madness](https://github.com/THE21Falcam/Dungeon-Madness) - a text-based adventure game built in Python.
 
+## Installation
 
-# TODO
+### Requirements
+- Python 3.8+
 
-- STRUCTURE PROJECT
-MadnessCLI/
-├── main.py           # Entry point
-├── game/
-│   ├── player.py     # Player class
-│   ├── dungeon.py    # Dungeon generation
-│   └── combat.py     # Combat system
-├── requirements.txt
-└── README.md
+### Setup
+```bash
+git clone https://github.com/THE21Falcam/MadnessCLI.git
+cd MadnessCLI
+pip install -r requirements.txt
+python cli_game.py
