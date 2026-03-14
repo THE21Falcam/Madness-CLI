@@ -20,6 +20,13 @@ Loot_Table = {
     1:[], # [name, droprate, Rarity, metrics, discription]
 }
 
+User_Stats = {
+    "ATK"
+}
+
+def Save_Game():    
+    pass
+
 while(Playing):
 
     subprocess.run('clear')
@@ -28,13 +35,12 @@ while(Playing):
     print("Welcome to Dungeon Madness CLI")
     print("Type 'h' for Help in Command Line ")
     print("")
+
     for items in Text_Display:
         print("    " + items[0])
+    
     print("")
     
-    # State Manager
-    
-
     # Command Help
     
     CommandInput = input(f"{Command_Text} > ")
