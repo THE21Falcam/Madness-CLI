@@ -17,4 +17,4 @@ An CLI version of [Dungeon Madness](https://github.com/THE21Falcam/Dungeon-Madne
 git clone https://github.com/THE21Falcam/MadnessCLI.git
 cd MadnessCLI
 pip install -r requirements.txt
-python cli_game.py
+python main.py
