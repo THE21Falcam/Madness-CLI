@@ -14,16 +14,6 @@ Text_Display = [
 
 ]
 
-Username = ""
-
-Loot_Table = {
-    1:[], # [name, droprate, Rarity, metrics, discription]
-}
-
-User_Stats = {
-    "ATK"
-}
-
 if __name__ == "__main__":
 
     while(Playing):
@@ -52,10 +42,6 @@ if __name__ == "__main__":
                 ["'start' for Starting the Game"]
         
             ]
-    
-        elif CommandInput == "start":
-    
-            pass
     
         elif CommandInput == "q":
         
