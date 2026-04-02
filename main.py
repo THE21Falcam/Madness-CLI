@@ -10,7 +10,7 @@ Command_Text = "Command Line Enter Commands"
 
 Text_Display = [
     
-    ["Type 'start' to Start the Game & 'q' to Quit the Game"]
+    ["Type 'start' to Start the Game & 'q' to Quit the Game."]
 
 ]
 
