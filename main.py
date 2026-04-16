@@ -1,24 +1,23 @@
-#TODO: Image to Ascii art convertor Black & White
-#TODO: Create LootTable 
+# TODO: Image to Ascii art convertor Black & White
+# TODO: Create LootTable
 
-import sys, subprocess
+import os
+import subprocess
+import sys
 
 Playing = True
 Game_State = 0
 
 Command_Text = "Command Line Enter Commands"
 
-Text_Display = [
-    
-    ["Type 'start' to Start the Game & 'q' to Quit the Game."]
-
-]
+Text_Display = [["Type 'start' to Start the Game & 'q' to Quit the Game."]]
 
 if __name__ == "__main__":
-
-    while(Playing):
-
-        subprocess.run('clear')
+    while Playing:
+        if sys.platform == "linux":
+            subprocess.run("clear")
+        elif sys.platform == "win32":
+            os.system("cls")
 
         print("")
         print("Welcome to Dungeon Madness CLI")
@@ -27,24 +26,23 @@ if __name__ == "__main__":
 
         for items in Text_Display:
             print("    " + items[0])
-    
-        print("")
-    
-        # Command Help
-    
-        CommandInput = input(f"{Command_Text} > ")
-    
-        if CommandInput == "h":
 
+        print("")
+
+        # Command Help
+
+        CommandInput = input(f"{Command_Text} > ")
+
+        if CommandInput == "h":
             Text_Display = [
-            
                 ["'q' for Quitting the Game"],
-                ["'start' for Starting the Game"]
-        
+                ["'start' for Starting the Game"],
             ]
-    
+
         elif CommandInput == "q":
-        
             Playing = False
 
-subprocess.run('clear')
+if sys.platform == "linux":
+    subprocess.run("clear")
+elif sys.platform == "win32":
+    os.system("cls")
