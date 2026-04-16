@@ -1,12 +1,16 @@
 #TODO: Image to Ascii art convertor Black & White
 #TODO: Create LootTable 
 
+import os
 import sys, subprocess
 
 Playing = True
 Game_State = 0
 
 Command_Text = "Command Line Enter Commands"
+
+
+#size of Text_Display list will be equal to os.get_terminal_size.lines
 
 Text_Display = [
     
@@ -17,13 +21,16 @@ Text_Display = [
 if __name__ == "__main__":
 
     while(Playing):
+        
+        window_size = os.get_terminal_size()
 
         subprocess.run('clear')
 
-        print("")
+        print(window_size.columns)
         print("Welcome to Dungeon Madness CLI")
         print("Type 'h' for Help in Command Line ")
-        print("")
+        print("-"* window_size.columns)
+        
 
         for items in Text_Display:
             print("    " + items[0])
