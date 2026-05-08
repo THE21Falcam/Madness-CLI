@@ -1,6 +1,3 @@
-# config["CLIENT"] = {"Sesson_ID": str(LoginDataSD['Data'])}
-# SessionID = config["CLIENT"]["Sesson_ID"]
-
 import os.path
 from configparser import ConfigParser
 
